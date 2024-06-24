@@ -1,0 +1,181 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "flask_assignment",
+    "dateExported": "2024-06-24T08:36:48.510Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bfca8e3c-d29d-46e4-a517-69842d095b6a",
+            "colId": "1788b104-b065-456b-ae72-1e53bd83abb1",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/auth/register",
+            "url": "http://127.0.0.1:5000/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-23T05:09:38.547Z",
+            "modified": "2024-06-23T05:09:38.547Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"sonali\",\n    \"email\": \"sonali.mohanta@gmail.com\",\n    \"password\": \"sonali123\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "541c54aa-bf7d-4811-925a-bb0f8372a4e3",
+            "colId": "1788b104-b065-456b-ae72-1e53bd83abb1",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/auth/login",
+            "url": "http://127.0.0.1:5000/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-23T05:09:49.240Z",
+            "modified": "2024-06-24T05:50:09.312Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"monali.mohanta@gmail.com\",\n    \"password\": \"monali123\"\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE2NjA4OCwianRpIjoiMWY4NjAzODYtMTlmYi00MTQ2LWFhMjctMzlkNzBlNWE2ODVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6NTc1OSwibmFtZSI6Im1vbmFsaSIsImVtYWlsIjoibW9uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTE2NjA4OCwiY3NyZiI6IjU2OTgxMjNmLTM0ZTItNDg2YS04NTMyLTdkZDJjMDhmYjcxMiIsImV4cCI6MTcxOTE2Njk4OH0.fwZPc7FzU9kJv29hTw0-UzCEkGZfnuBo1FMI179MLBM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "acaa6495-ff1c-4707-8ab5-2e7202eaea3e",
+            "colId": "1788b104-b065-456b-ae72-1e53bd83abb1",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/user?name=",
+            "url": "http://127.0.0.1:5000/data/users?email=sonali.mohanta@gmail.com",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-23T12:10:42.857Z",
+            "modified": "2024-06-24T06:31:00.775Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Key",
+                    "value": "Authorization",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Bearer",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTEyNDEzOSwianRpIjoiNThmMmMyYmUtMDkwOS00ZTRmLTlmZTUtN2U4OTM3YTkzZjIwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwibmFtZSI6InNvbmFsaSIsImVtYWlsIjoic29uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTEyNDEzOSwiY3NyZiI6ImNlYWI2MzVlLTE0ZmItNDEwMy1hZDE2LWZlMjA0ZmM4OWIxMyIsImV4cCI6MTcxOTEyNTAzOX0.JaouNPIc6PRxS1UJ_j-RqAIk04UXf8YcYwdguSFOepU",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "email",
+                    "value": "sonali.mohanta@gmail.com",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTIxMDY1MSwianRpIjoiMjBiZDQyMjItZmE3Yy00MjY3LTk4YjAtYjU2ZDZjMzg3YjU3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6NTc1OSwibmFtZSI6Im1vbmFsaSIsImVtYWlsIjoibW9uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTIxMDY1MSwiY3NyZiI6ImNiOTNlZDNjLWQ0ZGEtNDE0YS1hNjZmLWQwNThlNWMwMjY1NiIsImV4cCI6MTcxOTIxMTU1MX0.Rm3X_IpSUsz6Yy2s-lUAB8cVlYMJOTRhY_qT6PI8Wk0"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1ca70d21-8217-4d34-9db4-e86efa702111",
+            "colId": "1788b104-b065-456b-ae72-1e53bd83abb1",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/data/transactions?date_from=2024-06-07",
+            "url": "http://127.0.0.1:5000/data/transactions?date_from=2024-06-07",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-06-23T18:19:35.202Z",
+            "modified": "2024-06-23T18:19:35.202Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE2NjA4OCwianRpIjoiMWY4NjAzODYtMTlmYi00MTQ2LWFhMjctMzlkNzBlNWE2ODVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6NTc1OSwibmFtZSI6Im1vbmFsaSIsImVtYWlsIjoibW9uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTE2NjA4OCwiY3NyZiI6IjU2OTgxMjNmLTM0ZTItNDg2YS04NTMyLTdkZDJjMDhmYjcxMiIsImV4cCI6MTcxOTE2Njk4OH0.fwZPc7FzU9kJv29hTw0-UzCEkGZfnuBo1FMI179MLBM.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTEyMjQ0NiwianRpIjoiYThhZGI3YTEtZTIxMC00YzE4LWFjODAtZDZjODY2MjljMDdlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwibmFtZSI6InNvbmFsaSIsImVtYWlsIjoic29uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTEyMjQ0NiwiY3NyZiI6IjVmOTFlZTVjLTViNzktNDI3OC1iYjZkLTZhOTFjMDBhMWI4ZCIsImV4cCI6MTcxOTEyMzM0Nn0.Il6k6SnoOXNqCNm6k3MWXYKeIDmjNnVOK_kQLZ8q1U0"
+                }
+            ],
+            "params": [
+                {
+                    "name": "date_from",
+                    "value": "2024-06-07",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE2NjEyNSwianRpIjoiNjJhMTc1NmUtZDk1MS00YjAzLTkxOTUtYTdkYzU1YTE5MDdmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6NTc1OSwibmFtZSI6Im1vbmFsaSIsImVtYWlsIjoibW9uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTE2NjEyNSwiY3NyZiI6IjEzNWIwOWVlLTk3MGEtNDQ0My04ODgxLTllNjIxM2RjODRlZCIsImV4cCI6MTcxOTE2NzAyNX0.fG7VeT8Leh0-aHDgRyk6EXukQWoqBNzc8f_ucfTp7GE"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3857fc8f-7ecb-452a-af40-ae98665c7dc2",
+            "colId": "1788b104-b065-456b-ae72-1e53bd83abb1",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/data/transactions?date_from=2024-06-07 Copy",
+            "url": "http://127.0.0.1:5000/data/transactions/summary",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2024-06-24T07:50:54.542Z",
+            "modified": "2024-06-24T07:52:47.312Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE2NjA4OCwianRpIjoiMWY4NjAzODYtMTlmYi00MTQ2LWFhMjctMzlkNzBlNWE2ODVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6NTc1OSwibmFtZSI6Im1vbmFsaSIsImVtYWlsIjoibW9uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTE2NjA4OCwiY3NyZiI6IjU2OTgxMjNmLTM0ZTItNDg2YS04NTMyLTdkZDJjMDhmYjcxMiIsImV4cCI6MTcxOTE2Njk4OH0.fwZPc7FzU9kJv29hTw0-UzCEkGZfnuBo1FMI179MLBM.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTEyMjQ0NiwianRpIjoiYThhZGI3YTEtZTIxMC00YzE4LWFjODAtZDZjODY2MjljMDdlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwibmFtZSI6InNvbmFsaSIsImVtYWlsIjoic29uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTEyMjQ0NiwiY3NyZiI6IjVmOTFlZTVjLTViNzktNDI3OC1iYjZkLTZhOTFjMDBhMWI4ZCIsImV4cCI6MTcxOTEyMzM0Nn0.Il6k6SnoOXNqCNm6k3MWXYKeIDmjNnVOK_kQLZ8q1U0",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTIxNTU1MiwianRpIjoiNDYxM2IwZDEtNzgwYS00NWZmLTk4NDctMmJiMzZiYjgzNDdiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6NTc1OSwibmFtZSI6Im1vbmFsaSIsImVtYWlsIjoibW9uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTIxNTU1MiwiY3NyZiI6IjE0NTNlNjViLTI2MzItNDMwMS04YWI2LWI1ZTk2M2FlMzU5NyIsImV4cCI6MTcxOTIxNjQ1Mn0.FLHEOAaA0zBDgnfSNgNjrsgUfjGQzOEh4NlviyOMiHE"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6a31d588-75d2-456a-b413-e165f585222f",
+            "colId": "1788b104-b065-456b-ae72-1e53bd83abb1",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/data/transactions?date_from=2024-06-07 Copy",
+            "url": "http://127.0.0.1:5000/data/data/delete/3763",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-06-23T18:32:27.817Z",
+            "modified": "2024-06-24T05:52:07.427Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE2OTkzMCwianRpIjoiMzVkNjQzODEtNWViYS00NDZmLWJmZjYtZTYwNmFkOWRiYWZhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwibmFtZSI6InNvbmFsaSIsImVtYWlsIjoic29uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTE2OTkzMCwiY3NyZiI6IjFjMjlkOGM5LWRkMTktNGZiMi04YzA2LWNkZjNiNDQwYWQ1ZSIsImV4cCI6MTcxOTE3MDgzMH0.PvW5PWrtgmAvxkvvlyvdrmbBJbjuIvAk4qbZEPD37ZY.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE2OTY0NCwianRpIjoiMmY0ZTc5YWMtMjA0My00NThmLWJiMTEtYjU5ZTdhMWFkMmFmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwibmFtZSI6InNvbmFsaSIsImVtYWlsIjoic29uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTE2OTY0NCwiY3NyZiI6IjNjZTIzYTcxLWE2MTEtNDljNC05MjYwLTRiZjA4YTk2ZWU2NSIsImV4cCI6MTcxOTE3MDU0NH0.UHT17GZGq1V34YZuOIVYrG7tdQ9gEP0aBfgrtWmtq8Q.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE2NjA4OCwianRpIjoiMWY4NjAzODYtMTlmYi00MTQ2LWFhMjctMzlkNzBlNWE2ODVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6NTc1OSwibmFtZSI6Im1vbmFsaSIsImVtYWlsIjoibW9uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTE2NjA4OCwiY3NyZiI6IjU2OTgxMjNmLTM0ZTItNDg2YS04NTMyLTdkZDJjMDhmYjcxMiIsImV4cCI6MTcxOTE2Njk4OH0.fwZPc7FzU9kJv29hTw0-UzCEkGZfnuBo1FMI179MLBM.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTEyMjQ0NiwianRpIjoiYThhZGI3YTEtZTIxMC00YzE4LWFjODAtZDZjODY2MjljMDdlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwibmFtZSI6InNvbmFsaSIsImVtYWlsIjoic29uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTEyMjQ0NiwiY3NyZiI6IjVmOTFlZTVjLTViNzktNDI3OC1iYjZkLTZhOTFjMDBhMWI4ZCIsImV4cCI6MTcxOTEyMzM0Nn0.Il6k6SnoOXNqCNm6k3MWXYKeIDmjNnVOK_kQLZ8q1U0",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTIwODI0NywianRpIjoiYTM3NzUwMmEtYjFhMi00MzQ1LWJjMmYtMzA5OTk5MmMyYjQzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6NTc1OSwibmFtZSI6Im1vbmFsaSIsImVtYWlsIjoibW9uYWxpLm1vaGFudGFAZ21haWwuY29tIn0sIm5iZiI6MTcxOTIwODI0NywiY3NyZiI6ImI3YjVjM2JlLTdhNjItNGYwNy05MDQyLTVhOTFiYjc3YzMxNiIsImV4cCI6MTcxOTIwOTE0N30.e2BxoxzoCeYXE4Re-dI70sX3GpC-tsLWrk4LQdQ3Z1U"
+            },
+            "tests": []
+        }
+    ]
+}
