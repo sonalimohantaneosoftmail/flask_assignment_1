@@ -40,31 +40,28 @@ Requirements:
 
 Features 
 - Added generate_fake_data.py script to generate random users and random transactions related to it in mysql database by using data/ingest_data api.
--Created api data/users to fetch users and filter users by email,name.
--Created api data/transactions to fetch transactions and filter transactions by user_id, type, date_from, date_to.
--Created api data/transactions/summary to calculate.
--Added added.is_admin.py script to set user_id=1 as the admin.
--Created api data/data/delete/user_id here if created_user.is_admin then it can delete other user only. 
+- Created api data/users to fetch users and filter users by email,name.
+- Created api data/transactions to fetch transactions and filter transactions by user_id, type, date_from, date_to.
+- Created api data/transactions/summary to calculate.
+- Added added.is_admin.py script to set user_id=1 as the admin.
+- Created api data/data/delete/user_id here if created_user.is_admin then it can delete other user only. 
 
 
 Postman-Collection
--thunder-collection_flask_assignment.json
+- thunder-collection_flask_assignment.json
 
 How to run
 1. In 1 terminal 
--flask db init
--flask db migrate -m "Added is_admin field to the user"
--flask db upgrade
--flask run
--export FLASK_APP=run.py
--export FLASK_ENV=development
-flask run
+- flask db init
+- flask db migrate -m "Added is_admin field to the user"
+- flask db upgrade
+- flask run
+- export FLASK_APP=run.py
+- export FLASK_ENV=development
+- flask run
 
 2. In other terminal
 - python generate_fake_data.py
--python added_is_admin.py 
+- python added_is_admin.py 
 
 
-
-
-# flask_assignment_1
